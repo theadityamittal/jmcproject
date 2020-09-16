@@ -1,0 +1,169 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Peta', sans-serif;
+    color: #000000;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+a{
+    color: #ffffff;
+    text-decoration: solid;
+}
+
+a:hover{
+    color: #d3d3d3;
+    text-decoration: underline;
+}
+
+
+
+/* ---- particles.js container ---- */ 
+ #particles-js{ 
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -10;
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+} 
+
+/*  HEADER  */ 
+
+header{
+    background: none;
+    color: #d3d3d3;
+    margin-bottom: 1%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 1;
+}
+
+.titlerow div{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    justify-content: center;    
+}
+
+.title h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+}
+
+.heading{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+    border-bottom: solid #d3d3d3 2px;
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.profile{
+    justify-content: flex-end;
+}
+
+.profile img{
+    height: 50px;
+}
+
+/* CAROUSEL */
+.carousel{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* GALLERY */
+.card-body{
+    background-color: #343a40;
+    color: #d3d3d3;
+}
+
+.photocard{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 348px;
+    transition: ease-in 200ms;
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
+/* FOOTER */
+
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+    background: #343a40;
+    z-index: 1;
+    height: 130px;
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1200px){
+    footer{
+        font-size: 13px;
+    }
+
+    .title h2{
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:991px){
+
+    footer{
+        padding: 5%;
+        font-size: 10px;
+    }
+
+    .title h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .logo img{
+        height: 60px;
+    }
+    
+    .profile img{
+        height: 40px;
+    }
+}
+
+
+
+
+
+
