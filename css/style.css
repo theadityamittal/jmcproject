@@ -24,7 +24,17 @@ a:hover{
     text-decoration: underline;
 }
 
+.section-heading{
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
 
+hr {
+    display: block;
+    height: 1px;
+    border: none;
+    background-color: #000000;
+  }
 
 /* ---- particles.js container ---- */ 
  #particles-js{ 
@@ -38,7 +48,7 @@ a:hover{
     background-position: 50% 50%; 
 } 
 
-/*  HEADER  */ 
+/* ---------------- HEADER -------------------- */ 
 
 header{
     background: none;
@@ -90,12 +100,60 @@ header{
     height: 50px;
 }
 
+/* ---------------------- HOME ---------------------- */
+.item-a{
+    grid-area: a;
+}
+
+.item-b{
+    grid-area: b;
+}
+
+.item-c{
+    grid-area: c;
+}
+
+.item-d{
+    grid-area: d;
+}
+
+.item-e{
+    grid-area: e;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a a b c"
+    "a a d e";
+    gap: 8px;
+}
+
+img-container{
+    z-index: 10;
+    box-shadow: inset 0px -30px 150px 50px rgba(0,0,0,0.7);
+}
+
+.extra-article{
+    margin-bottom: 1%;
+
+}
+
+
+
+/* ---------------------- ARTICLES ---------------------- */
+
+/* ---------------------- BLOGS ---------------------- */
+
+/* ---------------------- GALLERY ---------------------- */
+
 /* CAROUSEL */
 .carousel{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* GALLERY */
+/* IMAGES */
 .card-body{
     background-color: #343a40;
     color: #d3d3d3;
@@ -116,19 +174,19 @@ header{
 .card:hover{
     transform: scale(1.01);
 }
-/* FOOTER */
+/* ---------------------- FOOTER ----------------------- */
 
 footer{
+    margin-top: 2%;
     padding-top: 2%;
     padding-bottom: 2%;
     position: relative;
     background: #343a40;
-    z-index: 1;
     height: 130px;
     width: 100%;
 }
 
-/* MEDIA QUERIES */
+/* ----------------------- MEDIA QUERIES --------------------- */
 
 @media screen and (max-width:1200px){
     footer{
@@ -150,6 +208,15 @@ footer{
     .title h2{
         font-size: 25px;
     }
+
+    .grid-container{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "b c"
+        "d e";
+    }
 }
 
 @media screen and (max-width:768px){
@@ -159,6 +226,16 @@ footer{
     
     .profile img{
         height: 40px;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
     }
 }
 
