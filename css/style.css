@@ -15,12 +15,13 @@ html {
 }
 
 a{
-    color: #ffffff;
+    color: #d3d3d3;
     text-decoration: solid;
+    transition: 0.5s;
 }
 
 a:hover{
-    color: #d3d3d3;
+    color: #ffffff;
     text-decoration: solid;
 }
 
