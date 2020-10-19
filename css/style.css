@@ -69,11 +69,12 @@ header{
     justify-content: center;    
 }
 
-.title h2{
+.title h1{
+    font-family: 'Volkhov', 'Lexend Peta', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 35px;
+    font-size: 39px;
 }
 
 .heading{
@@ -200,7 +201,7 @@ nav ul li{
     z-index: 1;
 }
 
-.articleimg img{
+.articleimg .imgwrapper img{
     max-width: 100%;
     max-height: 100%;
 }
@@ -250,6 +251,8 @@ nav ul li{
 
 footer{
     margin-top: 2%;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 2%;
     padding-bottom: 2%;
     position: relative;
@@ -275,7 +278,7 @@ footer{
         font-size: 13px;
     }
 
-    .title h2{
+    .title h1{
         font-size: 33px;
     }
 
@@ -292,7 +295,7 @@ footer{
         font-size: 10px;
     }
 
-    .title h2{
+    .title h1{
         font-size: 25px;
     }
 
@@ -342,31 +345,54 @@ footer{
 
     .articlecard{
         margin: 0%;
+        margin-bottom: 0%;
+        margin-top: 0%;
         width: 100%;
+        height: 140px;
         border-top: #810000 solid 1px;
-        border-bottom: #810000 solid 1px;
         padding: 1%;
         padding-top: 3%;
         padding-bottom: 3%;
     }
 
     .articleimg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        float: left;
         width: 39%;
+        height: 100%;
         display: inline-block;
     }
 
+    .imgwrapper{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgwrapper img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
     .articlecontent{
-        padding-top: 5%;
-        padding-bottom: 5%;
+        float: left;
+        padding-left: 2%;
         width: 59%;
+        height: 100%;
         display: inline-block;
     }
 
     .articlecontent h6{
+        height: 100%;
+        margin: 0;
         font-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .articlecontent p{
