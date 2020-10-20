@@ -15,13 +15,12 @@ html {
 }
 
 a{
-    color: #d3d3d3;
+    color: #ffffff;
     text-decoration: solid;
-    transition: 0.5s;
 }
 
 a:hover{
-    color: #ffffff;
+    color: #ffcc00;
     text-decoration: solid;
 }
 
@@ -174,6 +173,44 @@ nav ul li{
 
 
 /* ---------------------- ARTICLES ---------------------- */
+.headlines .articlecard{
+    display: inline;  
+    width: 25%;
+    margin: 1%;
+    height: auto;
+}
+
+.headlines #carouselExampleFade{
+    display: block;
+    float: left;
+    width: 44%;
+    margin: 1%;
+}
+
+.headlines #carouselExampleFade .carousel-item::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px -80px 250px 10px rgba(0,0,0,0.8);
+    z-index: 0;
+}
+
+.headlines{  
+    font-family: Helvetica;  
+    padding-left: 7%;
+    padding-right: 7%;  
+    height: 350px;
+    margin: 0%;
+    max-width: 100%;
+}
+
+#seperator{
+    width: 100%;
+    height: 0;
+}
 
 .othernews{
     padding-left: 7%;
@@ -182,7 +219,7 @@ nav ul li{
 }
 
 .articlecard{
-    display: inline-block;
+    display: block;
     float: left;
     width: 31%;
     height: 350px;
@@ -223,6 +260,10 @@ nav ul li{
 .articlecontent p{
     font-size: 90%;
     font-style: italic;
+}
+
+#rightheadline{
+    float: right;
 }
 
 
@@ -296,6 +337,10 @@ footer{
         margin: 2%;
         width: 44%;
     }
+
+    .headlines{
+        height: 310px;
+    }
 }
 
 @media screen and (max-width:991px){
@@ -309,13 +354,21 @@ footer{
         font-size: 25px;
     }
 
-    .grid-container{
-        grid-template-columns: auto auto;
-        grid-template-areas: 
-        "a a"
-        "a a"
-        "b c"
-        "d e";
+    .headlines .carousel{
+        float: left;
+        width: 80%;
+        margin: 3%;
+    }
+
+    .headlines .articlecard{
+        float: none;
+        display: inline-block;
+        width: 43%;
+        margin: 2%;
+    }
+
+    #rightheadline{
+        float: left;
     }
 }
 
@@ -370,7 +423,7 @@ footer{
         float: left;
         width: 39%;
         height: 100%;
-        display: inline-block;
+        display: block;
     }
 
     .imgwrapper{
@@ -395,7 +448,7 @@ footer{
         padding-left: 2%;
         width: 59%;
         height: 100%;
-        display: inline-block;
+        display: block;
     }
 
     .articlecontent h6{
@@ -410,20 +463,4 @@ footer{
     .articlecontent p{
         display: none;
     }
-
-    .grid-container{
-        grid-template-columns: auto;
-        grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d"
-        "e";
-    }
 }
-
-
-
-
-
-
