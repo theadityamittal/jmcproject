@@ -112,12 +112,20 @@ nav ul li{
     padding: 8px;
 }
 
-.navtab{
-    margin: 0%;
-}
-
 .tabicons{
     display: none;
+}
+
+.navtab{
+    margin: 0%;
+    border: none;
+    color: #ffffff;
+}
+
+.activetab a p{
+    border-left: #ffcc00 solid 3px;
+    border-right: #ffcc00 solid 3px;
+    color: #ffcc00;
 }
 
 /* ---------------------- HOME ---------------------- */
