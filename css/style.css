@@ -126,6 +126,7 @@ nav ul li{
     margin: 0%;
     border: none;
     color: #ffffff;
+    transition: 0.7s;
 }
 
 .navtab:hover{
