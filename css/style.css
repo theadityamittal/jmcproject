@@ -128,6 +128,10 @@ nav ul li{
     color: #ffffff;
 }
 
+.navtab:hover{
+    color: #ffcc00;
+}
+
 .activetab a p{
     border-left: #ffcc00 solid 3px;
     border-right: #ffcc00 solid 3px;
