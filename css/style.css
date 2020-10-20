@@ -202,14 +202,9 @@ nav ul li{
     font-family: Helvetica;  
     padding-left: 7%;
     padding-right: 7%;  
-    height: 350px;
+    height: 370px;
     margin: 0%;
     max-width: 100%;
-}
-
-#seperator{
-    width: 100%;
-    height: 0;
 }
 
 .othernews{
@@ -262,10 +257,14 @@ nav ul li{
     font-style: italic;
 }
 
+
+#leftheadline{
+    float: left;
+}
+
 #rightheadline{
     float: right;
 }
-
 
 /* ---------------------- BLOGS ---------------------- */
 
@@ -354,21 +353,30 @@ footer{
         font-size: 25px;
     }
 
-    .headlines .carousel{
+    .headlines{
+        height: auto;
+    }
+
+    .headlines #carouselExampleFade{
         float: left;
         width: 80%;
-        margin: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .headlines .articlecard{
         float: none;
         display: inline-block;
-        width: 43%;
+        width: 44%;
         margin: 2%;
     }
 
-    #rightheadline{
+    #leftheadline{
         float: left;
+    }
+
+    #rightheadline{
+        float: right;
     }
 }
 
@@ -406,7 +414,17 @@ footer{
         height: 40px;
     }
 
-    .articlecard{
+    .headlines #carouselExampleFade{
+        margin: 0;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .headlines #carouselExampleFade .carousel-item::after{
+        box-shadow: inset 0px 0px 150px -10px rgba(0,0,0,0.8);
+    }
+
+    .articlecard, #leftheadline, #rightheadline{
         margin: 0%;
         margin-bottom: 0%;
         margin-top: 0%;
