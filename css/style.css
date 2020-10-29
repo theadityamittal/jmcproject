@@ -499,6 +499,15 @@ footer .container{
         display: none;
     }
 
+    .gallery-cell .card-body h5{
+        font-size: 100%;
+
+    }
+    
+    .gallery-cell .card-body p{
+        font-size: 80%;
+    }
+
     .headlines{
         height: auto;
     }
