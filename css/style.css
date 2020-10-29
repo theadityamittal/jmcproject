@@ -176,6 +176,16 @@ nav ul li{
     transition: 0.3s;
 }
 
+.homecard a{
+    color: #000000;
+    text-decoration: solid;
+}
+
+.homecard a:hover{
+    color: #000000;
+    text-decoration: solid;
+}
+
 .homecard:hover{
     transform: scale(1.02);
     z-index: 1;
@@ -267,7 +277,7 @@ nav ul li{
 }
 
 .headlines{  
-    font-family: Helvetica;  
+    font-family: 'Roboto Slab', Helvetica;  
     padding-left: 7%;
     padding-right: 7%;  
     height: 370px;
@@ -278,7 +288,7 @@ nav ul li{
 .othernews{
     padding-left: 7%;
     padding-right: 7%;
-    font-family: Helvetica;
+    font-family: 'Roboto Slab', Helvetica;
 }
 
 .articlecard{
@@ -289,6 +299,16 @@ nav ul li{
     margin: 1%;
     background: #ffffff;
     transition: 0.3s;
+}
+
+.articlecard a{
+    color: #000000;
+    text-decoration: solid;
+}
+
+.articlecard a:hover{
+    color: #000000;
+    text-decoration: solid;
 }
 
 .articlecard:hover{
@@ -499,7 +519,7 @@ footer .container{
 
     .homecard{
         height: 150px;
-        font-family: Helvetica;  
+        font-family: 'Roboto Slab', Helvetica;  
         font-size: 100%;
     }
 
