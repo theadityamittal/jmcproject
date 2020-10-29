@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-position: top;
     background-position-y: 75px;
 }
