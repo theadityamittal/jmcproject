@@ -249,6 +249,30 @@ nav ul li{
     z-index: 1;
 }
 
+.container-fluid{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.gallery-cell .card{
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.gallery-cell .card .card-body .card-title{
+    font-weight: 700;
+}
+
+.gallery-cell .card .card-body .btn{
+    color: #810000;
+    border-color: #810000;
+}
+
+.gallery-cell .card .card-body .btn:hover{
+    color: #ffcc00;
+    background-color: #810000;
+}
 
 /* ---------------------- ARTICLES ---------------------- */
 .headlines .articlecard{
