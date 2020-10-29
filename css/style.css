@@ -565,6 +565,10 @@ footer .container{
         font-size: 80%;
     }
 
+    .gallery-cell .card-body .btn{
+        font-size: 80%;
+    }
+
     .headlines{
         height: auto;
     }
