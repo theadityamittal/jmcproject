@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: #f3f3f3;
     background-image: url(../images/1.PNG);
     background-repeat: no-repeat;
@@ -81,6 +83,9 @@ header{
     body{
         background-size: 100% 50vh;
         background-position-y: 5%;
+        width: 100%;
+        margin: 0;
+        padding: 0%;
     }
 
     .article{
